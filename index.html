@@ -2,9 +2,12 @@
  <head>
   <style>
     img {
+      position: absolute;
       margin: auto;
-      display: flex;
-      justify-content: center;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
       width: 50%;
       height: 50%;
     }
@@ -18,7 +21,7 @@
             overflow: hidden; /* Hide overflow content */
             border-right: 2px solid black; /* Create a cursor effect */
             animation: drawText 3s linear forwards; /* Animation for drawing effect */
-            background: linear-gradient(to right, orange, pink); /* Gradient from orange to pink */
+            background: linear-gradient(to right, orange, rgb(158, 20, 43)); /* Gradient from orange to pink */
             -webkit-background-clip: text;
             color: transparent; /* Set text to transparent to reveal the gradient background */
         }
@@ -30,9 +33,17 @@
             }
         }
   </style>
+  <title>Listy, Inc</title>
+  <meta name="keywords" content="P2P marketplace, classifieds, hosted web service,
+  SaaS, community classifieds, local swap; for sale, for trade, online listings,
+   hosted listings, classifieds listings, user classifieds">
+   <meta name="description" content="Listy provides the easiest way to give your users for-sale 
+   listings & classifieds. Low cost, low touch, no code,
+    and hosted by us. Try it for free.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  </head>
- <body>
-   <h1><center>Listy, Inc</center></h1>
+ <body style="background-color:rgb(0, 0, 0);">
+   <h1 style="color: white;"><center>Listy, Inc</center></h1>
    <div id="output"></div>
    <img src="Curch.jpeg" alt="Painting" >
 
