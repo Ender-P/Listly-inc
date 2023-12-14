@@ -2,18 +2,57 @@
  <head>
   <style>
     img {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: auto;
+      margin: auto;
+      display: flex;
+      justify-content: center;
       width: 50%;
       height: 50%;
     }
+     /* CSS styling for the output div */
+     #output {
+            font-family: 'Pacifico', cursive; /* Use a more artistic font */
+            font-size: 36px;
+            text-align: center;
+            font-weight: bold; /* Make the text thicker */
+            white-space: nowrap; /* Prevent line breaks */
+            overflow: hidden; /* Hide overflow content */
+            border-right: 2px solid black; /* Create a cursor effect */
+            animation: drawText 3s linear forwards; /* Animation for drawing effect */
+            background: linear-gradient(to right, orange, pink); /* Gradient from orange to pink */
+            -webkit-background-clip: text;
+            color: transparent; /* Set text to transparent to reveal the gradient background */
+        }
+
+        @keyframes drawText {
+            100% {
+                border-right: none; /* Remove cursor effect */
+                color: #ff00ff; /* Set a final color if needed */
+            }
+        }
   </style>
  </head>
  <body>
    <h1><center>Listy, Inc</center></h1>
-   <p><center>Hello World</center></p>
+   <div id="output"></div>
    <img src="Curch.jpeg" alt="Painting" >
+
+
+   <script>
+    // JavaScript code to gradually display "Hello, World!"
+    const text = 'Hello, World!';
+    const outputElement = document.getElementById('output');
+    let index = 0;
+
+    function drawText() {
+        outputElement.textContent += text[index];
+        index++;
+
+        if (index < text.length) {
+            setTimeout(drawText, Math.random() * 200); // Adjust the timeout for irregular drawing motion
+        }
+    }
+
+    drawText();
+</script>
  </body>
 </html>
