@@ -1,50 +1,25 @@
-body {
-    background-color: black;
+html, body {
+  height: 100%
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+#hello {
+  height: 50vw;
+  width: 80vw;
+  stroke-dasharray: 3363;
+  animation: 3s fillSvg linear;
+}
+
+@keyframes fillSvg{
+  0%{
+      stroke-dashoffset: 3363;
   }
-  
-     .mac-outer .st0 {
-        fill: none;
-        stroke: #FFFFFF;
-        stroke-miterlimit: 10;
-    }
-  
-    .mac-outer .st1 {
-        fill: none;
-        stroke: #FFFFFF;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-    }
-  
-    .mac-outer .st2 {
-        fill: none;
-        stroke: #FFFFFF;
-        stroke-width: 0.25;
-        stroke-miterlimit: 10;
-    }
-  
-  .mac-hello {
-   grid-row: 5;
-   grid-column: 5/11;
-  }
-  
-     .mac-hello .st0 {
-          stroke: #ffffff;
-       stroke-width: 15;
-       stroke-linecap: round;
-      }
-  
-  .mac-hello {
-    stroke-dasharray: 4200;
-    stroke-dashoffset: 4200; /* Reset to 250 and then reduce with animation to give the desired effect */
-    animation: writeIn 2.5s linear forwards;
-  }
-  
-  @keyframes writeIn {
-    0% {
-      stroke-dashoffset: 4000;
-    }
-    100% {
+  100%{
       stroke-dashoffset: 0;
-    }
   }
-  
+}
