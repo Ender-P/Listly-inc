@@ -1,11 +1,22 @@
-html, body {
-  height: 100%
+html {
+  height: 100%;
+  scroll-behavior: smooth;
 }
 body{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
   background-color: black;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.align-items-center {
+  align-items: center;
 }
 
 #hello {
@@ -23,3 +34,24 @@ body{
       stroke-dashoffset: 0;
   }
 }
+
+p {
+  color: white;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 20px;
+}
+
+#middle{
+  padding-top: 10vw;
+}
+
+#coffee_pic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 58vw;
+  width: 80vw;
+  
+}
+
+
