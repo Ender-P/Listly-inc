@@ -56,8 +56,14 @@ p {
   font-size: 20px;
 }
 
+.svg-icon:hover{
+  transform: scale(1.5);
+}
+
 .svg-icon{
   margin-top: -10px;
+  transition: all 1s;
+  transform-origin: 50% 50%;
 }
 
 #middle{
