@@ -7,6 +7,20 @@ body{
   background-color: black;
 }
 
+@media screen and (max-width: 768px) {
+  #hello{
+    padding-top:15vh;
+  }
+  p{
+    padding-top: 40vh;
+  }
+  #coffee_pic{
+    margin-top: 40vh;
+    padding-bottom: 50%;
+  }
+}
+
+
 .d-flex {
   display: flex;
 }
@@ -36,8 +50,9 @@ body{
 }
 
 p {
+  
   color: white;
-  font-family: 'Libre Franklin', sans-serif;
+  
   font-size: 20px;
 }
 
